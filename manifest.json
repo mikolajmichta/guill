@@ -1,0 +1,15 @@
+{
+    "name": "Guill",
+    "version": "1.0",
+    "description": "Hides news about E. Windsor and her family on gazeta.pl.",
+    "manifest_version": 2,
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_scripts": [{
+        "matches": ["*://*.gazeta.pl/*"],
+        "js": ["jquery.slim.min.js" ,"contentScript.js"]
+    }]
+}
